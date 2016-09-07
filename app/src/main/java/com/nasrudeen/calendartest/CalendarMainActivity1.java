@@ -43,12 +43,14 @@ public class CalendarMainActivity1 extends AppCompatActivity {
         arrayList.add(calendarModel);
         Log.i("Date Data--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month0)));
 
+
         calendarModel = new CalendarModel();
         cal_month1.set(GregorianCalendar.MONTH,cal_month0.get(GregorianCalendar.MONTH)+1);
         calendarModel.setStrCalendarMonth(cal_month1);
         calendarModel.setStrTextMonth(String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month1)));
         arrayList.add(calendarModel);
         Log.i("Date Data--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month1)));
+
 
         calendarModel = new CalendarModel();
         cal_month2.set(GregorianCalendar.MONTH,cal_month1.get(GregorianCalendar.MONTH)+1);
@@ -57,6 +59,7 @@ public class CalendarMainActivity1 extends AppCompatActivity {
         arrayList.add(calendarModel);
         Log.i("Date Data--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month2)));
 
+
         calendarModel = new CalendarModel();
         cal_month3.set(GregorianCalendar.MONTH,cal_month2.get(GregorianCalendar.MONTH)+1);
         calendarModel.setStrCalendarMonth(cal_month3);
@@ -64,7 +67,7 @@ public class CalendarMainActivity1 extends AppCompatActivity {
         arrayList.add(calendarModel);
         Log.i("Date Data--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month3)));
 
-//        cal_month4.set(GregorianCalendar.MONTH,cal_month3.get(GregorianCalendar.MONTH)+1);
+
         calendarModel = new CalendarModel();
         cal_month4 = setNextMonth(cal_month4,cal_month3);
         calendarModel.setStrCalendarMonth(cal_month4);
@@ -72,15 +75,15 @@ public class CalendarMainActivity1 extends AppCompatActivity {
         arrayList.add(calendarModel);
         Log.i("Date Data 2017 jan--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month4)));
 
-//        cal_month5.set(GregorianCalendar.MONTH,cal_month4.get(GregorianCalendar.MONTH)+1);
+
+
         cal_month5.set((cal_month4.get(GregorianCalendar.YEAR)),cal_month4.get(GregorianCalendar.MONTH)+1, 1);
         calendarModel = new CalendarModel();
-//        cal_month5 = setNextMonth(cal_month5,cal_month4);
         calendarModel.setStrCalendarMonth(cal_month5);
-//        calendarModel.setStrCalendarMonth(setNextMonth(cal_month4));
         calendarModel.setStrTextMonth(String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month5)));
         arrayList.add(calendarModel);
         Log.i("Date Data feb--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month5)));
+
 
 
         cal_month6.set((cal_month5.get(GregorianCalendar.YEAR)),cal_month5.get(GregorianCalendar.MONTH)+1, 1);
@@ -90,6 +93,7 @@ public class CalendarMainActivity1 extends AppCompatActivity {
         arrayList.add(calendarModel);
         Log.i("Date Data--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month6)));
 
+
         cal_month7.set((cal_month6.get(GregorianCalendar.YEAR)),cal_month6.get(GregorianCalendar.MONTH)+1, 1);
         calendarModel = new CalendarModel();
         calendarModel.setStrCalendarMonth(cal_month7);
@@ -97,7 +101,7 @@ public class CalendarMainActivity1 extends AppCompatActivity {
         arrayList.add(calendarModel);
         Log.i("Date Data--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month7)));
 
-//        cal_month8.set(GregorianCalendar.MONTH,cal_month7.get(GregorianCalendar.MONTH)+1);
+
         cal_month8.set((cal_month7.get(GregorianCalendar.YEAR)),cal_month7.get(GregorianCalendar.MONTH)+1, 1);
         calendarModel = new CalendarModel();
         calendarModel.setStrCalendarMonth(cal_month8);
@@ -105,32 +109,31 @@ public class CalendarMainActivity1 extends AppCompatActivity {
         arrayList.add(calendarModel);
         Log.i("Date Data--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month8)));
 
-//        cal_month9.set(GregorianCalendar.MONTH,cal_month8.get(GregorianCalendar.MONTH)+1);
+
         cal_month9.set((cal_month8.get(GregorianCalendar.YEAR)),cal_month8.get(GregorianCalendar.MONTH)+1, 1);
         calendarModel = new CalendarModel();
-//        cal_month9 = setNextMonth(cal_month9,cal_month8);
         calendarModel.setStrCalendarMonth(cal_month9);
         calendarModel.setStrTextMonth(String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month9)));
         arrayList.add(calendarModel);
         Log.i("Date Data--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month9)));
 
-//        cal_month10.set(GregorianCalendar.MONTH,cal_month9.get(GregorianCalendar.MONTH)+1);
+
+
         cal_month10.set((cal_month9.get(GregorianCalendar.YEAR)),cal_month9.get(GregorianCalendar.MONTH)+1, 1);
         calendarModel = new CalendarModel();
-//        cal_month10 = setNextMonth(cal_month10,cal_month9);
         calendarModel.setStrCalendarMonth(cal_month10);
         calendarModel.setStrTextMonth(String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month10)));
         arrayList.add(calendarModel);
         Log.i("Date Data--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month10)));
 
-//        cal_month11.set(GregorianCalendar.MONTH,cal_month10.get(GregorianCalendar.MONTH)+1);
+
         cal_month11.set((cal_month10.get(GregorianCalendar.YEAR)),cal_month10.get(GregorianCalendar.MONTH)+1, 1);
         calendarModel = new CalendarModel();
-//        cal_month11 = setNextMonth(cal_month11,cal_month10);
         calendarModel.setStrCalendarMonth(cal_month11);
         calendarModel.setStrTextMonth(String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month11)));
         arrayList.add(calendarModel);
         Log.i("Date Data--->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",cal_month11)));
+
 
         calendarMainAdapter = new CalendarMainAdapter(getApplicationContext(),arrayList,currentMonth);
         listView.setAdapter(calendarMainAdapter);
@@ -142,7 +145,6 @@ public class CalendarMainActivity1 extends AppCompatActivity {
             Log.i("Year -->", String.valueOf(previousMonth.get(GregorianCalendar.YEAR) + 1));
             Log.i("Month and Year -->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",currentMonth)));
         } else {
-//            currentMonth.set
             currentMonth.set(GregorianCalendar.MONTH,previousMonth.get(GregorianCalendar.MONTH) + 1);
             Log.i("Year -->", String.valueOf(currentMonth.get(GregorianCalendar.YEAR)));
             Log.i("Month and Year -->",String.valueOf(android.text.format.DateFormat.format("MMM yyyy",currentMonth)));
